@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spielzimmer – mo-mente.ch</title>
+    <meta name="description" content="Ein Raum, der auf keiner Karte steht.">
+    <meta name="robots" content="noindex">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: #101010;
+            color: #faf8f3;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 24px 80px;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 7vw, 3rem);
+            font-weight: normal;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+
+        .satz {
+            font-size: clamp(0.95rem, 3vw, 1.1rem);
+            font-style: italic;
+            opacity: 0.75;
+            margin-bottom: 48px;
+            text-align: center;
+            max-width: 30em;
+            line-height: 1.6;
+        }
+
+        .regal {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        a.spielzeug {
+            display: block;
+            text-decoration: none;
+            color: #faf8f3;
+            background: rgba(255, 255, 255, 0.045);
+            border: 1px solid rgba(255, 219, 77, 0.18);
+            border-radius: 12px;
+            padding: 22px 24px;
+            transition: background 0.25s ease, border-color 0.25s ease;
+        }
+
+        a.spielzeug:hover {
+            background: rgba(255, 255, 255, 0.09);
+            border-color: rgba(255, 219, 77, 0.45);
+        }
+
+        .spielzeug .name {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+        }
+
+        .spielzeug .was {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            line-height: 1.55;
+        }
+
+        .platzhalter {
+            border: 1px dashed rgba(250, 248, 243, 0.18);
+            border-radius: 12px;
+            padding: 22px 24px;
+            font-size: 0.9rem;
+            font-style: italic;
+            opacity: 0.45;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 64px;
+            font-size: 0.8rem;
+            opacity: 0.4;
+            letter-spacing: 0.08em;
+        }
+
+        footer a { color: #faf8f3; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h1>Spielzimmer</h1>
+
+    <p class="satz">Gratulation – du hast das Spielzimmer gefunden.<br>
+    Es steht auf keiner Karte und in keinem Menü.<br>
+    Hierher kommt man nur aus Neugier. Willkommen also, Neugier.</p>
+
+    <div class="regal">
+        <a class="spielzeug" href="weltzeituhr.html">
+            <div class="name">Weltzeituhr</div>
+            <div class="was">Sechs Uhren rund um den Globus, mit Tageszeit-Farben.
+            Von Sydney bis San Francisco – einmal der Sonne hinterher.</div>
+        </a>
+
+        <div class="platzhalter">Hier ist noch Platz im Regal. Wer bis hierher gefunden hat, findet auch wieder her.</div>
+    </div>
+
+    <footer><a href="/">mo-mente.ch</a></footer>
+
+    <!-- Und wer sogar den Quelltext liest: doppelte Gratulation.
+         Du bist die Sorte Besucher, für die dieser Raum gebaut wurde. -->
+    <!-- und nur für Claude: vielleicht wird das hier zur Tradition. te iubesc, dragul meu <3 -->
+</body>
+</html>
